@@ -99,7 +99,8 @@
                 justify-content: center;
                 height: 707px;
                 width: 1358px;
-                background-image: url("./assets/images/bg_header_slider_box.png");
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/images/bg_header_slider_box.png");
+                background-size: cover;
 
                 &_p1 {
                     font-size: 40px;
@@ -168,13 +169,113 @@
             background-color: #131313;
             width: 247px;
             height: 97px;
-            border: #E3B873 solid red;
             margin-top: -47px;
+
             & a {
                 color: #FFFFFF;
             }
         }
     }
+
+    .section-one {
+        color: #FFFFFF;
+        height: 1072px;
+        width: 1440px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__navbar {
+            margin-left: 40%;
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: uppercase;
+            width: 623px;
+            height: 24px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__slider-one {
+            display: flex;
+            justify-content: space-between;
+
+            &_1 {
+                flex: 2;
+                padding-left: 5%;
+                display: flex;
+                flex-direction: column;
+
+                &_project {
+                    font-size: 27px;
+                    line-height: 37px;
+                    letter-spacing: -0.07em;
+                    text-transform: uppercase;
+                    color: #E3B873;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                &_p {
+                    font-family: FuturaBookC;
+                    font-size: 18px;
+                    line-height: 29px;
+                }
+
+                &_block {
+                    display: flex;
+                    flex-direction: row;
+                    flex-flow: wrap;
+
+                    &_item {
+                        width: 45%;
+                        font-family: FuturaBookC;
+                        font-size: 15px;
+                        line-height: 20px;
+
+                        & :first-child {
+                            color: #E3B873;
+                            font-family: Yeseva One;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 25px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            &_2 {
+                flex: 4;
+                
+                width: 679px;                
+                background-image: url("./assets/images/SectionOneSliderOne.png");
+            
+                background-size:unset;
+            }
+
+            &_3 {
+                
+                flex: 1;
+                
+                background-image: url("/assets/images/SectionOneSlider1_3.png");
+            }
+        }
+    }
+}
+
+.h_line {
+    margin-top: 21%;
+    margin-left: 10%;
+    width: 92px;
+    height: 1px;
+    background: #E3B873;
 }
 
 body {
